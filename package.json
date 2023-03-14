@@ -2,7 +2,7 @@
   "name": "wordle-archive",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.devangthakkar.com/wordle_archive",
+  "homepage": "https://wordle-archive.bobpaul.org/",
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@testing-library/jest-dom": "^5.16.1",
@@ -16,8 +16,8 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "echo 'creating build folder for deployment' && npm run build",
+    "deploy-to-github": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
